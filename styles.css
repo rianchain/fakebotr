@@ -89,16 +89,17 @@ input {
     }
 
     #loaders {
+        display: none;
+        position: relative;
+        z-index: 9;
+        left: 80%;
         align-items: center;
         justify-content: center;
-        top: 50%;
-        left: 50%;
-        margin-left: 25px;
     }
 }
 
 #loaders {
-    /* display: none; */
+    display: none;
     align-items: center;
     justify-content: center;
     width: 85px;
