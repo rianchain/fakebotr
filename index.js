@@ -1,5 +1,7 @@
 const pertanyaan = document.getElementById('pertanyaan')
 const jawaban = document.getElementById('jawaban')
+const loaders = document.getElementById('loaders')
+const container = document.getElementsByClassName('container')
 
 let init = 0;
 
@@ -18,6 +20,7 @@ pertanyaan.innerHTML = botSay()[0]
 let usersData = []
 
 function botStart() {
+    if(jawaban.value.length < 1) return alert("silahkan masukan jawaban kamu!!!")
     init++
     if (init === 1) {
         botDelay({ nama: jawaban.value })
@@ -36,9 +39,12 @@ function botStart() {
 }
 
 function botDelay(jawabanUser) {
-    console.log(usersData)
+    loaders.style.display = "block"
+    container[0].style.filter = "blur(8px)"
     setTimeout(() => {
         pertanyaan.innerHTML = botSay(jawabanUser)[init]
+        loaders.style.display = "none"
+        container[0].style.filter = "none"
     }, [2000])
     usersData.push(jawaban.value)
     jawaban.value = ""
@@ -50,5 +56,6 @@ function finishing() {
 }
 
 function botEnd() {
+    alert("Terimakasih!!")
     window.location.reload()
 }
