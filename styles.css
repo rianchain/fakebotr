@@ -69,7 +69,7 @@ input {
         align-items: center;
         text-align: center;
         flex-direction: column;
-        width: 83%;
+        width: 100%;
     }
 
     .row {
