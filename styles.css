@@ -1,0 +1,83 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: cadetblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    border: none;
+    background-color: steelblue;
+    font-size: 24px;
+    padding: 16px;
+    margin-left: 10px;
+    height: 65px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:tomato;
+}
+
+input {
+    border: none;
+    background-color: #eaeaea;
+    color: black;
+    padding: 15px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#pertanyaan {
+    color: black;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+@media (max-width: 412px) {
+    .wrapper {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .row {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    input {
+        padding-left: 15px;
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 20px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
