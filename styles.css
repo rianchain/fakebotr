@@ -64,7 +64,11 @@ input {
     font-weight: 500;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 450px) {
+
+    .container {
+        width: 100%;
+    }
     .wrapper {
         align-items: center;
         text-align: center;
@@ -90,11 +94,9 @@ input {
 
     #loaders {
         display: none;
-        position: relative;
-        z-index: 9;
-        left: 80%;
-        align-items: center;
-        justify-content: center;
+        margin-top: 20px;
+        margin-right: 900px;
+        margin-left: -20px
     }
 }
 
