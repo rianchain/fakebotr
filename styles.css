@@ -118,6 +118,13 @@ input {
         margin-top: 10px;
         width: 100%;
     }
+
+    #loaders {
+        display: none;
+        margin-top: -50px;
+        margin-right: 900px;
+        margin-left: -25px
+    }
 }
 
 #loaders {
